@@ -8,7 +8,7 @@ const MarketingApp = () => {
     mount(ref.current);
   }, []);
 
-  return <div className='marketing-wrapper' ref={ref} />;
+  return <div className="marketing-wrapper" ref={ref} />;
 };
 
 export default MarketingApp;
