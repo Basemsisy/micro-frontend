@@ -1,15 +1,15 @@
-import React from "react";
-import { Route, Router, Switch } from "react-router-dom";
+import React from 'react';
+import { Route, Router, Switch } from 'react-router-dom';
 import {
   StylesProvider,
   createGenerateClassName,
-} from "@material-ui/core/styles";
-import Signin from "./components/Signin";
-import Signup from "./components/Signup";
+} from '@material-ui/core/styles';
+import Signin from './components/Signin';
+import Signup from './components/Signup';
 
 const App = ({ history }) => {
   const generateClassName = createGenerateClassName({
-    productionPrefix: "au",
+    productionPrefix: 'au',
   });
 
   return (
@@ -17,8 +17,8 @@ const App = ({ history }) => {
       <StylesProvider generateClassName={generateClassName}>
         <Router history={history}>
           <Switch>
-            <Route path={"/auth/signin"} component={Signin} />
-            <Route path={"/auth/signup"} component={Signup} />
+            <Route path={'/auth/signin'} component={Signin} />
+            <Route path={'/auth/signup'} component={Signup} />
           </Switch>
         </Router>
       </StylesProvider>
