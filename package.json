@@ -5,10 +5,12 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn lerna run start"
+    "start": "yarn lerna run start",
+    "build": "yarn lerna run build"
   },
   "dependencies": {},
   "devDependencies": {
-    "lerna": "^7.1.3"
+    "lerna": "^7.1.3",
+    "prettier": "^3.0.0"
   }
 }
