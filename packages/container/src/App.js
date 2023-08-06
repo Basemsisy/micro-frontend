@@ -21,7 +21,7 @@ const App = () => {
     <BrowserRouter>
       <StylesProvider generateClassName={generateClassName}>
         <div className="App">
-          <Header isSignedIn={isSignedIn} />
+          <Header isSignedIn={isSignedIn} onSignOut={() => setIsSignedIn(false)} />
           <Suspense fallback={<Progress />}>
             <Switch>
               <Route path="/auth">
